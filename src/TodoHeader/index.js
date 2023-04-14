@@ -12,7 +12,3 @@ export { TodoHeader };
 
 
 
-// totalTodos,
-//     completedTodos,
-//     searchValue,
-//     setSearchValue,
