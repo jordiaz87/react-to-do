@@ -12,7 +12,7 @@ function withStorageListener(WrappedComponent) {
         });
 
         const toggleShow = () => {
-            props.sincronize()
+            props.sincronize();
             setStorageChange(false);
         };
 

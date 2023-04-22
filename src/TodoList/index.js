@@ -16,7 +16,7 @@ function TodoList(props) {
 
             
 
-            {props.searchedTodos.map(renderFunc)}
+            {(!props.loading && !props.error) && props.searchedTodos.map(renderFunc)}
 
             
         </section>
