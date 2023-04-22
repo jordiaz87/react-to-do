@@ -11,7 +11,7 @@ import { TodoSearch } from '../TodoSearch';
 import { TodosError } from '../TodosError';
 import { TodosLoading } from '../TodosLoading';
 import { EmptyTodos } from '../EmptyTodos';
-import { ChangeAlertWithStorageListener } from '../ChangeAlert';
+import { ChangeAlert } from '../ChangeAlert';
 
 
 
@@ -62,16 +62,6 @@ function App() {
           <p>No hay resultado para {searchText} </p>} 
   > 
   
-  {/* // render={todo => (
-  //     <TodoItem 
-  //       key={todo.text} 
-  //       text={todo.text}
-  //       completed={todo.completed}
-  //       onComplete={() => completeTodo(todo.text)}
-  //       onDelete={() => deleteTodo(todo.text)}
-  //     />
-  // )} */}
-
   {todo => (
       <TodoItem 
         key={todo.text} 
@@ -99,7 +89,7 @@ function App() {
     setOpenModal={setOpenModal}
   />
 
-  <ChangeAlertWithStorageListener 
+  <ChangeAlert 
     sincronize={sincronizeTodos}
   />
 
