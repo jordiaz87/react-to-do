@@ -18,20 +18,28 @@ import { ChangeAlert } from '../ChangeAlert';
 function App() {
 
   const { 
-    error, 
-    loading, 
-    searchedTodos, 
-    completeTodo, 
-    openModal,
-    setOpenModal,
-    totalTodos, 
-    completedTodos,
-    deleteTodo, 
-    searchValue, 
-    setSearchValue,
-    addTodo, 
-    sincronizeTodos,
+    state,
+    stateUpdaters
   } = useTodos();
+
+  const {
+    error,
+    loading,
+    searchedTodos,
+    totalTodos,
+    completeTodo,
+    completedTodos,
+    openModal,
+    searchValue,
+  } = state;
+
+  const {
+    setOpenModal,
+    addTodo,
+    deleteTodo,
+    setSearchValue,
+    sincronizeTodos,
+  } = stateUpdaters;
 
   return (
     <React.Fragment>
