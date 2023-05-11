@@ -27,13 +27,13 @@ function App() {
     loading,
     searchedTodos,
     totalTodos,
-    completeTodo,
     completedTodos,
     openModal,
     searchValue,
   } = state;
 
   const {
+    completeTodo,
     setOpenModal,
     addTodo,
     deleteTodo,
