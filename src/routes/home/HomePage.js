@@ -12,10 +12,14 @@ import { TodosError } from '../../ui/TodosError';
 import { TodosLoading } from '../../ui/TodosLoading';
 import { EmptyTodos } from '../../ui/EmptyTodos';
 import { ChangeAlert } from '../../ui/ChangeAlert';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 function HomePage() {
+
+ const navigate = useNavigate();
 
   const { 
     state,
@@ -28,14 +32,14 @@ function HomePage() {
     searchedTodos,
     totalTodos,
     completedTodos,
-    openModal,
+    // openModal,
     searchValue,
   } = state;
 
   const {
     completeTodo,
-    setOpenModal,
-    addTodo,
+    // setOpenModal,
+    // addTodo,
     deleteTodo,
     setSearchValue,
     sincronizeTodos,
@@ -75,7 +79,7 @@ function HomePage() {
         key={todo.id} 
         text={todo.text}
         completed={todo.completed}
-        onEdit={() => console.log('Editar todo')}
+        onEdit={() => navigate('/edit/' + todo.id)}
         onComplete={() => completeTodo(todo.id)}
         onDelete={() => deleteTodo(todo.id)}
       />
@@ -84,7 +88,7 @@ function HomePage() {
   </TodoList>    
   
    
-   {!!openModal && (
+   {/* {!!openModal && (
     <Modal>
       <TodoForm 
         addTodo={addTodo}
@@ -92,10 +96,11 @@ function HomePage() {
 
       />
    </Modal>
-   )}
+   )} */}
 
   <CreateTodoButton 
-    setOpenModal={setOpenModal}
+    onClick={() => navigate('/new')}
+    // setOpenModal={setOpenModal}
   />
 
   <ChangeAlert 
