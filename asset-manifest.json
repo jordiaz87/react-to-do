@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/react-to-do/static/css/main.81892c80.css",
-    "main.js": "/react-to-do/static/js/main.0b8635b3.js",
+    "main.css": "/react-to-do/static/css/main.ea649392.css",
+    "main.js": "/react-to-do/static/js/main.145e1e77.js",
     "index.html": "/react-to-do/index.html",
-    "main.81892c80.css.map": "/react-to-do/static/css/main.81892c80.css.map",
-    "main.0b8635b3.js.map": "/react-to-do/static/js/main.0b8635b3.js.map"
+    "static/media/delete.svg": "/react-to-do/static/media/delete.331149da222541bc87c25bf8d775a070.svg",
+    "static/media/edit.svg": "/react-to-do/static/media/edit.8cfd1d84718f081de4327bd813c4738c.svg",
+    "static/media/check.svg": "/react-to-do/static/media/check.fa4fb594b16385306a04b9c87c0feb55.svg",
+    "main.ea649392.css.map": "/react-to-do/static/css/main.ea649392.css.map",
+    "main.145e1e77.js.map": "/react-to-do/static/js/main.145e1e77.js.map"
   },
   "entrypoints": [
-    "static/css/main.81892c80.css",
-    "static/js/main.0b8635b3.js"
+    "static/css/main.ea649392.css",
+    "static/js/main.145e1e77.js"
   ]
 }
